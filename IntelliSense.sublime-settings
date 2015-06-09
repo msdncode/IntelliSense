@@ -1,0 +1,51 @@
+{
+    // IntelliSense 1.0.0
+    // Make a tooltips to show the detail of a function in sublime_text
+    // 2015/06/06
+    // https://github.com/FunctionManual/IntelliSense
+    // 
+    //========================================================================= 
+    // Using
+    // -----
+    // Left mouse button click a function, or useing keyboard, or keyboard+click.
+    // 
+    //   Default keymap and mousemap:
+    //   ctrl+shift+b
+    //   ctrl+click
+    //  
+    // Define private function lib
+    // ---------------------------
+    // Data storing in the file: Data\Packages\IntelliSense\lib\function.***
+    // (note: *** is the script document filename extension) 
+    // 
+    // Each function in one line in the file, example::
+    //   type function (type param, type param = value, ...) //description
+    // or::
+    //   type function (type param, type param = value, ...)
+    // or::
+    //   function (param, param = value, ...) //description
+    //    
+    // You can create your owner file and save as function.***
+    // A char # at left line is comment line, not loading
+    // 
+    //========================================================================= 
+    "font-size"  : "12px", //font size in tooltips
+    "max-width"  : 1000,   //tooltips max width
+    "description": 0,      //whether display the description, 1 or 0
+    "delay": 1000,         //if zero, not display the tooltips by mouse, else show after it event;
+    "color":
+    {
+       "background":  "#F2F2F2",  //tooltips background
+       "normal":      "#444444",  //default text color
+       "function":    "#0000FF",  //function name text color
+       "type":        "#C5060B",  //variable type text color
+       "param":       "#318495",  //variable text color
+       "value":       "#FF00FF",  //variable default value text color
+       "description": "#A2A2A2",  //description text color
+    },
+    //the script document filename extension, if no, use the map
+    "assoc":
+    {
+       "h": "cpp"
+    }
+}
