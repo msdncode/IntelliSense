@@ -102,7 +102,6 @@ class intellisenseCommand(sublime_plugin.TextCommand):
             while not self.view.classify(position) & sublime.CLASS_WORD_START:
                 position -= 1
             s_str = self.view.substr(sublime.Region(position, line.end()))
-
         if self.view.substr(position-1)=='$':
             return None
         keyword = re.split('[^a-zA-Z0-9_]', s_str)[0]
