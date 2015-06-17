@@ -99,7 +99,7 @@ class intellisenseCommand(sublime_plugin.TextCommand):
             s_str = self.view.substr(s)
         else:
             line = self.view.line(position)
-            while not self.view.classify(position) & sublime.CLASS_WORD_START:
+            while (not self.view.classify(position) & sublime.CLASS_WORD_START) and position>0:
                 position -= 1
             s_str = self.view.substr(sublime.Region(position, line.end()))
         if self.view.substr(position-1)=='$':
