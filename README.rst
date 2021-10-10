@@ -3,8 +3,6 @@ IntelliSense
 
 Make a tooltip to show the detail of a function in sublime_text
 
-https://github.com/FunctionManual/IntelliSense
-
 Using
 -----
 * Left mouse button click a function, or useing keyboard, or keyboard+click.
